@@ -2,19 +2,26 @@
 
 int main(void)
 {
-    int x, y, z, m;
-    int a, b, c;
-    x = 2;
-    z = 1;
-    a = 3;
-    b = 4;
-    c = 5;
+    int a, b;
+    int result_add;
+    int result_sub;
+    int result_mul;
+    int result_div;
+    int result_mod;
 
-    //y=ax2+bx+c
-    y = a*x*x + b*x + c;
+    scanf("%i %i", &a, &b);
 
-    //m=x+y+z/3
-    m = (x + y + z) / 3;
+    result_add = a + b;
+    result_sub = a - b;
+    result_mul = a * b;
+    result_div = a / b;
+    result_mod = a % b;
 
-    printf("y=%d, m=%d\n", y, m);
+    printf("result + is %i\n", result_add);
+    printf("result - is %i\n", result_sub);
+    printf("result * is %i\n", result_mul);
+    printf("result / is %i\n", result_div);
+    printf("result %% is %i\n", result_mod);
+
+    return 0;
 }
